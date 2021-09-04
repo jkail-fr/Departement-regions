@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+	  <meta charset="utf-8">
+	  <title>Geographie Helper</title>
+	  <link rel="stylesheet" href="./css/style.css">
+	</head>
+	<body>
+		<h1>Département - région</h1>
+		<div style="1px solid red">
+		TODO : 
+		<ol>
+		<li><del>générer les input text datalist +s </del>
+			<ul>
+				<li><del>faire une fonction qui prend le param : source data, element a cibler</del> -> Flemme</li>
+				<li><del>Essayer : liste déroulante html avec value "en cahrgement" et apres on ajoute tout et change value par defaut</del></li>
+			</ul>	
+		</li>	
+		<li><del>faire afficher le résultats (si possible on change, avec une reinitialisation des autres champs -> Fuck la reinitialisation)</del></li>
+		<li><del>voir pour input manuel pour numero</del></li>
+		<li><del>Saisir les anciennes region et empecher doublons affichage<del></li>
+		<li><del>fonction pour afficher + no result- Afficher pas de resultat en rowspan</del></li>
+		<li>NEXT : gérer l'affichage résultat region et ancienne region</li>
+		<li>Faire des fonctions si possible ( Fonction delete  + ecriture résultat : test empty tbdoy plutot que de try hard la fonction deleteRow et l'utiliser avent chaque resukltat + fonction créé des cellules + fonction pas de resultat</li>
+		<li>finir les else</li>
+		<li>Virer les consoles log, le div demo, nettoyer le code</li>
+		<li>Faire le style</li>
+		
+
+		<li>Readme github</li>
+		</ol>
+
+		</div>
+		<section id="recherche">
+			<h2>Rechercher</h2>
+			<p>Utiliser le formulaire ci-dessous pour chercher un department et trouver et sa région ou une région pour trouver ses départements. </p>
+
+			<div id="numberSearch">
+				<h3>Recherche par numéro</h3> 
+				<input type="number" placeholder="Num dépt" value="" name="numdeplist" id="num-dept" />
+			</div>
+			<div id="deptSearch">
+				<h3>Recherche par Département</h3> 
+				<input list="liste-departement" id="deplist" name="deplist" disabled placeholder="Chargement" />
+				<datalist id="liste-departement">
+				</datalist>
+			</div>
+			<div id="oldRegionSearch">
+				<h3>Recherche par Ancienne région administrative</h3> 
+				<input list="liste-oldregion" id="oldreglist" name="oldreglist" disabled placeholder="Chargement" />
+				<datalist id="liste-oldregion">
+				</datalist>
+			</div>
+			<div id="regionSearch">
+				<h3>Recherche par Région</h3> 
+				<input list="liste-region" id="reglist" name="reglist" disabled placeholder="Chargement" />
+				<datalist id="liste-region">
+				</datalist>
+			</div>
+		</section>
+		
+		<section id="resultat">
+			<h2>Résultats</h2>
+			<table id="resultList">
+				<thead>
+				<tr>
+					<th>Numéro</th>
+					<th>Département</th>
+					<th>Ancienne région</th>
+					<th>Région</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr><td colspan="4">Pas de résultats</td></tr>
+				</tbody>
+			</table>
+		</section>
+<p id="demo"></p>
+		<script type="text/javascript" src="js/data.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+
+	</body>
+</html>
