@@ -1,5 +1,20 @@
 body 
 {
+	/*Definition des couleurs principales*/
+	--first-color :#1891cf;
+	--second-color :#60B9CE;
+	--third-color :lightblue;
+	
 	box-sizing:border-box;
 	font-family: helvetica;
+	padding:auto;
+	text-align:center;
 }
+h1 {color:var(--first-color);}
+section#recherche div#searcharea {display:flex; flex-wrap:wrap; justify-content:space-around;}
+section#recherche div#searcharea div {border:1px solid black;padding:1em; border: 3px solid var(--first-color); background: var(--third-color); }
+table#resultList {margin:auto;}
+table#resultList tr td{padding:5px 10px;}
+table#resultList tr:nth-child(odd){background: var(--second-color);}
+table#resultList tr:nth-child(even){background:var(--third-color);}
+table#resultList tbody :first-of-type td{font-weight:bold;background:var(--first-color);}
